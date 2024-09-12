@@ -22,11 +22,13 @@ class SnackBarService {
           ),
         ),
         backgroundColor: backgroundColor,
+        duration: duration ?? const Duration(seconds: 3),
         shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(15),
-          topRight: Radius.circular(15),
-        )),
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(15),
+            topRight: Radius.circular(15),
+          ),
+        ),
       ),
     );
   }

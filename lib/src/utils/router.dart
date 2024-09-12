@@ -13,10 +13,10 @@ final GoRouter router = GoRouter(
       },
     ),
     GoRoute(
-      path: ProductScreen.routePath,
+      path: ProductView.routePath,
       builder: (BuildContext context, GoRouterState state) {
-        return const ProductScreen();
+        return const ProductView();
       },
-    )
+    ),
   ],
 );
