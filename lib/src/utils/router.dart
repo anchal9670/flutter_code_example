@@ -1,5 +1,6 @@
 import 'package:api_integration/src/common/views/splash.dart';
 import 'package:api_integration/src/feature/products/views/product.dart';
+import 'package:api_integration/src/feature/profile/view/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -16,6 +17,12 @@ final GoRouter router = GoRouter(
       path: ProductView.routePath,
       builder: (BuildContext context, GoRouterState state) {
         return const ProductView();
+      },
+    ),
+    GoRoute(
+      path: ProfileScreen.routePath,
+      builder: (BuildContext context, GoRouterState state) {
+        return const ProfileScreen();
       },
     ),
   ],
